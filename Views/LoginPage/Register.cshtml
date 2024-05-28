@@ -1,0 +1,21 @@
+@model LoginModel
+
+@using (Html.BeginForm("AddUser", "LoginPage"))
+{   
+    <center>
+        <h2>Add New User</h2><br>
+
+        <p>User Name: <input type="text" name="UserName" /></p>
+        <p>Password: <input type="password" name="Password" /></p>
+
+        <input type="submit" value="Add User" />
+    </center>
+}
+
+    @* <center>
+        <h3>Add New User</h3>
+        <p>UserName: @Html.TextBoxFor(x=> x.UserName)<br></p>
+        <p>Password: @Html.TextBoxFor(x=> x.Password)</p>
+
+        <p>@Html.ActionLink("Register","AddUser")</p>
+    </center> *@

@@ -1,0 +1,23 @@
+@model LoginModel 
+
+<center>
+    <h2>Welcome to Login Page </h2><br>
+        <form asp-action="Login" asp-controller="LoginPage">
+            <p>User Name: <input type="text" asp-for="UserName"></p>
+            <p>Password : <input type="password" asp-for="Password"></p>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form> 
+
+    <br>New User ?
+    <p>@Html.ActionLink("Sign up","Register")</p>    
+</center>
+    
+
+@* <a  type="button" class="btn btn-outline-primary" asp-action="Login"> UserName </a><br>
+   <a  type="button" class="btn btn-outline-primary" asp-action="Password"> Password </a><br>
+   <a  type="button" class="btn btn-outline-primary" asp-action="Login"> Login </a>  *@
+
+@*  <p>User Name: @Html.TextBoxFor(x=> x.UserName)<br></p>
+    <p>Password: @Html.PasswordFor(x=> x.Password)<br></p>
+    @Html.ActionLink("Login","Login") *@
+
